@@ -10,7 +10,7 @@ class CreateAuthorsTable extends Migration
      *
      * @return void
      */
-  public function up()
+      public function up()
   {
     Schema::create('authors', function(Blueprint $table)
     {

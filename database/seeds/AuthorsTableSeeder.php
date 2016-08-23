@@ -1,6 +1,6 @@
 <?php
 
-use App\User;
+use App\Author;
 use Illuminate\Database\Seeder;
 
 Class AuthorsTableSeeder extends Seeder {
@@ -10,18 +10,18 @@ Class AuthorsTableSeeder extends Seeder {
 DB::table('authors')->delete();
 
         Author::create(array(
-            'name' => 'Henrik',
-            'surname'=>'Ibsen'
+            'name' => 'Lauren',
+            'surname'=>'Oliver'
         ));
 
         Author::create(array(
-            'name' => 'Malkiat',
-            'surname'=>'Singh'
+            'name' => 'Stephenie',
+            'surname'=>'Meyer'
         ));
 
         Author::create(array(
-            'name' => 'Uhuru',
-            'surname'=>'Kenyatta'
+            'name' => 'Dan',
+            'surname'=>'Brown'
         ));
 
     }

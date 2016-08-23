@@ -2,6 +2,7 @@
 
 use App\User;
 use App\Authors;
+use App\Book;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder {
@@ -19,6 +20,8 @@ class DatabaseSeeder extends Seeder {
     $this->command->info('Users table seeded!');
     $this->call('AuthorsTableSeeder');
     $this->command->info('Authors table seeded!');
+    $this->call('BooksTableSeeder');
+    $this->command->info('Books table seeded!');
   }
 
 }
