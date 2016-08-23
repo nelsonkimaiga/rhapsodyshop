@@ -1,4 +1,9 @@
 <?php
+
+use App\User;
+use App\Authors;
+use Illuminate\Database\Seeder;
+
 class DatabaseSeeder extends Seeder {
 
   /**
@@ -12,6 +17,8 @@ class DatabaseSeeder extends Seeder {
 
     $this->call('UsersTableSeeder');
     $this->command->info('Users table seeded!');
+    $this->call('AuthorsTableSeeder');
+    $this->command->info('Authors table seeded!');
   }
 
 }
