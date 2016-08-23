@@ -1,6 +1,6 @@
 <?php
 
-use App\Author;
+use app\Author;
 use Illuminate\Database\Seeder;
 
 Class AuthorsTableSeeder extends Seeder {

@@ -1,7 +1,7 @@
 <?php
 
 use App\User;
-use App\Authors;
+use App\Author;
 use App\Book;
 use Illuminate\Database\Seeder;
 

@@ -3,21 +3,20 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCartsTable extends Migration
+class CreateOrdersTable extends Migration
 {
     /**
      * Run the migrations.
      *
      * @return void
      */
-  public function up()
+    public function up()
   {
-    Schema::create('carts', function(Blueprint $table)
+    Schema::create('orders', function(Blueprint $table)
     {
       $table->increments('id');
       $table->integer('member_id');
-      $table->integer('book_id');
-      $table->integer('amount');
+      $table->text('address');
       $table->decimal('total', 10, 2);
       $table->timestamps();
     });
@@ -30,7 +29,7 @@ class CreateCartsTable extends Migration
      */
     public function down()
     {
-        Schema::table('carts', function (Blueprint $table) {
+        Schema::table('orders', function (Blueprint $table) {
             //
         });
     }
